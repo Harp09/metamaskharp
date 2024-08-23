@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Donaciones a la Organización Harp</h1>
+  <p>Contribuye con nuestra causa realizando una donación en Ether a través de MetaMask.</p>
+  
+  <label for="amount">Monto en ETH:</label>
+  <input type="number" id="amount" placeholder="e.g., 0.01" step="0.001" min="0.001">
+
+  <label for="reason">Asunto/Motivo:</label>
+  <input type="text" id="reason" placeholder="Escribe el motivo de tu donación">
+
+  <button (click)="sendDonation()">Realizar Donación</button>
+  
+  <div id="status">{{ statusMessage }}</div>
+</div>

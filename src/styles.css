@@ -1,0 +1,89 @@
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #282c34;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título principal */
+.container h1 {
+    color: #61dafb;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+/* Campos de entrada */
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #61dafb;
+    border-radius: 8px;
+    background-color: #2c313c;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+input[type="number"]::placeholder,
+input[type="text"]::placeholder {
+    color: #a0a0a0;
+}
+
+/* Botón */
+button {
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+/* Mensaje de estado */
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#status.success {
+    color: #21f1a1;
+}
+
+#status.error {
+    color: #f14668;
+}
